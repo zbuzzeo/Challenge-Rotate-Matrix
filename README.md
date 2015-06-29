@@ -28,6 +28,10 @@ f e d
 c b a
 ```
 
+## Advanced
+
+Once your tests pass, you can move on to the `advanced` branch.
+
 ## Install dependencies
 
 ```
