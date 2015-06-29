@@ -32,6 +32,8 @@ c b a
 
 Once your tests pass, you can move on to the `advanced` branch.
 
+merge `advanced` into your current `master` branch. Follow instructions in the README.
+
 ## Install dependencies
 
 ```
