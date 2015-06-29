@@ -1,0 +1,22 @@
+{
+  "name": "challenge-rotate-matrix",
+  "version": "1.0.0",
+  "description": "Matrix Rotator ===========",
+  "main": "Direction.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devleague/Challenge-Rotate-Matrix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devleague/Challenge-Rotate-Matrix/issues"
+  },
+  "homepage": "https://github.com/devleague/Challenge-Rotate-Matrix#readme"
+}
