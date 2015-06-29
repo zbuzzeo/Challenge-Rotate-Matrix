@@ -4,10 +4,40 @@ Matrix Rotator
 Write the **rotate** method of the **MatrixRotator** class that accepts one argument, **direction**.  
 **rotate** must set the object's **matrix** property with a new, rotated matrix.
 
+Rotating a matrix clockwise will rotate every element to it's clockwise position.
+
+example matrix rotation:
+original
+```
+a b c
+d e f
+g h i
+```
+
+rotated clockwise (_CW_)
+```
+g d a
+h e b
+i f c
+```
+
+rotated clockwise (_CW_) once more
+```
+i h g
+f e d
+c b a
+```
+
+## Install dependencies
+
+```
+npm i
+```
+
+## Run tests
+
 There are **2** tests, make the tests pass.
-
-(you'll need jasmine-node)
-    npm install jasmine-node -g
-
-run automated tests by running
-    jasmine-node --autotest .
+    
+```
+mocha -w
+```
