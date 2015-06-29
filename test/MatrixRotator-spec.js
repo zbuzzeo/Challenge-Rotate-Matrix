@@ -79,7 +79,7 @@ describe("The Advanced Matrix Rotator", function () {
                                           ]);
   });
 
-it("can rotate layer 3 Clockwise", function () {
+  it("can rotate layer 3 Clockwise", function () {
     matrixRotator.rotate(Direction.CW, 3);
     matrixRotator.matrix.should.be.deep.equal([
                                             [31,25,19,13,7 ,1 ],
@@ -91,4 +91,19 @@ it("can rotate layer 3 Clockwise", function () {
                                           ]);
   });
 
-});    
+  describe("validates arguments", function () {
+
+    it("should accept layer ranges 1 - 3", function() {
+      (function () {
+        matrixRotator.rotate(Direction.CW, 0)
+      }).should.throw(RangeError);
+      (function () {
+        matrixRotator.rotate(Direction.CW, 4)
+      }).should.throw(RangeError);
+      (function () {
+        matrixRotator.rotate(Direction.CW, 3)
+      }).should.not.throw(RangeError);
+    });
+    
+  });
+});
