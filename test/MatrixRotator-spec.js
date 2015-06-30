@@ -1,12 +1,12 @@
 var chai = require('chai');
 chai.should();
 var MatrixRotator = require("../MatrixRotator").MatrixRotator;
-var Matrix = require("../Matrix").Matrix;
+var Matrix = require("../Matrix");
 var Direction = require("../Direction").Direction;
 
 describe("The Matrix Rotator", function () {
   
-  var matrixRotator = new MatrixRotator(Matrix.matrix1);
+  var matrixRotator = new MatrixRotator(Matrix.getMatrix1());
   
   it("can rotate Clockwise", function () {
     matrixRotator.rotate(Direction.CW);
