@@ -1,16 +1,16 @@
 var chai = require('chai');
 chai.should();
 var MatrixRotator = require("../MatrixRotator").MatrixRotator;
-var Matrix = require("../Matrix").Matrix;
+var Matrix = require("../Matrix");
 var Direction = require("../Direction").Direction;
 
 describe("The Matrix Rotator", function () {
-  
+
   var matrixRotator;
   beforeEach(function(){
-    matrixRotator = new MatrixRotator(Matrix.matrix1);
+    matrixRotator = new MatrixRotator(Matrix.getMatrix1());
   });
-  
+
   it("can rotate Clockwise", function () {
     matrixRotator.rotate(Direction.CW);
     matrixRotator.matrix.should.be.deep.equal( [
@@ -36,12 +36,13 @@ describe("The Matrix Rotator", function () {
 
 });
 describe("The Advanced Matrix Rotator", function () {
-  
+
   var matrixRotator;
   beforeEach(function(){
-    matrixRotator = new MatrixRotator(Matrix.matrix2);
+    matrixRotator = new MatrixRotator(Matrix.getMatrix2());
   });
-  
+
+
   it("can rotate all layers Clockwise", function () {
     matrixRotator.rotate(Direction.CW);
     matrixRotator.matrix.should.be.deep.equal( [
@@ -52,6 +53,7 @@ describe("The Advanced Matrix Rotator", function () {
                                             [35,29,23,17,11,5],
                                             [36,30,24,18,12,6]
                                           ]);
+    matrixRotator = null;
 
   });
 
@@ -68,6 +70,7 @@ describe("The Advanced Matrix Rotator", function () {
   });
 
   it("can rotate layer 2 Clockwise", function () {
+
     matrixRotator.rotate(Direction.CW, 2);
     matrixRotator.matrix.should.be.deep.equal([
                                             [1 ,2 ,3 ,4 ,5 ,6 ],
@@ -104,6 +107,6 @@ describe("The Advanced Matrix Rotator", function () {
         matrixRotator.rotate(Direction.CW, 3)
       }).should.not.throw(RangeError);
     });
-    
+
   });
 });
