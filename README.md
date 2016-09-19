@@ -1,7 +1,9 @@
-Matrix Rotator
+Matrix Rotator (TDD edition)
 ===========
 
-Write the **rotate** method of the **MatrixRotator** class that accepts one argument, **direction**.  
+**Tests must be written before implementation!**
+
+Write the **rotate** method of the **MatrixRotator** class that accepts one argument, **direction**.
 **rotate** must set the object's **matrix** property with a new, rotated matrix.
 
 Rotating a matrix clockwise will rotate every element to it's clockwise position.
@@ -37,13 +39,11 @@ merge `advanced` into your current `master` branch. Follow instructions in the R
 ## Install dependencies
 
 ```
-npm i
+$ npm install
 ```
 
 ## Run tests
 
-There are **2** tests, make the tests pass.
-    
 ```
-mocha -w
+$ npm test
 ```
