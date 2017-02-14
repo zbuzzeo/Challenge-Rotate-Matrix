@@ -1,7 +1,7 @@
 Matrix Rotator
 ===========
 
-Write the **rotate** method of the **MatrixRotator** class that accepts one argument, **direction**.  
+Write the **rotate** method of the **MatrixRotator** class that accepts one argument, **direction**.
 **rotate** must set the object's **matrix** property with a new, rotated matrix.
 
 Rotating a matrix clockwise will rotate every element to it's clockwise position.
@@ -42,8 +42,8 @@ npm i
 
 ## Run tests
 
-There are **2** tests, make the tests pass.
-    
+There are **4** tests, make the tests pass.
+
 ```
-mocha -w
+npm test
 ```
