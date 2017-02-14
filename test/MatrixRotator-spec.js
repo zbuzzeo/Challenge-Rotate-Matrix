@@ -2,7 +2,7 @@ const chai = require('chai');
 chai.should();
 const MatrixRotator = require("../MatrixRotator");
 const Matrix = require("../Matrix");
-const Direction = require("../Direction").Direction;
+const { Direction } = require("../Direction");
 
 describe("The Matrix Rotator", function () {
   let matrixRotator = null;
