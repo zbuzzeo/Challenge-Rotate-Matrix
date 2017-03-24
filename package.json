@@ -21,6 +21,7 @@
   "homepage": "https://github.com/devleague/Challenge-Rotate-Matrix#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "jasmine": "^2.5.3",
     "mocha": "^3.2.0"
   }
 }

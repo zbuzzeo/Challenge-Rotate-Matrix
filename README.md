@@ -46,4 +46,3 @@ There are **4** tests, make the tests pass.
 
 ```
 npm test
-```
