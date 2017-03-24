@@ -45,5 +45,5 @@ npm i
 There are **2** tests, make the tests pass.
     
 ```
-mocha -w
+npm test
 ```
