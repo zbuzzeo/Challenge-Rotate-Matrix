@@ -1,5 +1,5 @@
 module.exports = {
-  getMatrix1 : function(){
+  getMatrix1 : function () {
     return [
               [8,0,1,9,3],
               [4,5,2,9,7],
